@@ -11,5 +11,13 @@ $(document).ready(function(){
     $('#color').val('').focus();
   };
 
+  var set_color = function(){
+    var box = $(this);
+    var color = box.css('background-color');
+
+    $('#selected_color').css('background-color', color)
+  };
+
   $('#add_color').on('click', add_color);
+  $('#colors').on('click', '.box', set_color);
 });
