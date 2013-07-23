@@ -28,5 +28,5 @@ $(document).ready(function(){
 
   $('#add_color').on('click', add_color);
   $('#colors').on('click', '.box', set_color);
-  $('.paint_box').on('click', paint);
+  $('.paint_box').on('mouseover', paint);
 });

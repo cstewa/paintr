@@ -12,13 +12,14 @@
 }
 
 .paint_box{
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #ccc;
+  float: left;
+  width: 5px;
+  height: 5px;
+  margin: 0;
 }
 
 #canvas{
-  width: 500px;
+  width: 400px;
   border: 1px solid #333;
+  overflow: hidden;
 }
