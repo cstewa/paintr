@@ -18,6 +18,15 @@ $(document).ready(function(){
     $('#selected_color').css('background-color', color)
   };
 
+
+  var paint = function(){
+    var paint_box = $(this);
+    var color = $('#selected_color').css('background-color');
+
+    paint_box.css('background-color', color);
+  };
+
   $('#add_color').on('click', add_color);
   $('#colors').on('click', '.box', set_color);
+  $('.paint_box').on('click', paint);
 });
