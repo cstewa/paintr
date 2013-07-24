@@ -1,0 +1,3 @@
+- @images.each do |image|
+  #canvas{:style => image.url}
+    =link_to image.html.html_safe, image_url(image.id)

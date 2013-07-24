@@ -8,6 +8,18 @@
 
 #colors
 
+#image_form
+  = text_field_tag 'image', nil, :autofocus => true
+  = button_tag 'Add Image', :id => 'add_image'
+
+#images
+
 #canvas
-  - 2000.times do
+  - 12000.times do
     .paint_box
+
+= button_tag 'Save', :id => 'save'
+
+%br
+=link_to "Saved Images", images_url
+
